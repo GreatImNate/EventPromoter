@@ -70,11 +70,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/time"
         android:id="@+id/timeEdit"
-        android:inputType="time"
-        android:ems="10"
         android:hint="HH:MM"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp"/>
+        android:paddingRight="30dp"
+        android:focusable="false"
+        android:onClick="setTime"/>
 
 
 
@@ -87,17 +87,5 @@
         android:layout_marginBottom="24dp"
         android:id="@+id/postEvent"
         android:onClick="postEvent"/>
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_alignBottom="@+id/timeEdit"
-        android:layout_toRightOf="@+id/postEvent"
-        android:layout_toEndOf="@+id/postEvent"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp" />
-
 
 </RelativeLayout>
